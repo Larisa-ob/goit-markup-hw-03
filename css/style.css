@@ -6,6 +6,14 @@
   --bgr-section-color: #f5f4fa;
   /** --primary-font-family: "Roboto", sans-serif;*/
 }
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 body {
   background-color: var(--link-text-color);
   color: var(--primary-text-color);
@@ -15,6 +23,8 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
@@ -60,6 +70,7 @@ body {
 }
 /* Site-nav  */
 .site-nav {
+  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
