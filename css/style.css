@@ -27,8 +27,28 @@ body {
   margin: 0;
   list-style: none;
 }
+.contaner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .link {
   text-decoration: none;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.nav-list-link:not(:last-child) {
+  margin-right: 50px;
+}
+.header .contaner {
+  display: flex;
+}
+.adress-item {
+  flex-direction: row;
 }
 .button {
   font-weight: 500;
