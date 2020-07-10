@@ -41,14 +41,24 @@ body {
   display: flex;
   align-items: center;
 }
+.navigation .logo {
+  margin-right: 85px;
+}
 .nav-list-link:not(:last-child) {
   margin-right: 50px;
 }
 .header .contaner {
   display: flex;
+  justify-content: space-between;
 }
-.adress-item {
+.contaner .adress-item {
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  padding-right: 30px;
+}
+.adress-link:not(:last-child) {
+  margin-right: 30px;
 }
 .button {
   font-weight: 500;
