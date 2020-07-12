@@ -33,9 +33,14 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
 .link {
   text-decoration: none;
+}
+.header .contaner {
+  display: flex;
+  justify-content: space-between;
 }
 .navigation {
   display: flex;
@@ -46,10 +51,6 @@ body {
 }
 .nav-list-link:not(:last-child) {
   margin-right: 50px;
-}
-.header .contaner {
-  display: flex;
-  justify-content: space-between;
 }
 .contaner .adress-item {
   display: flex;
@@ -64,8 +65,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  align-items: center;
 }
-.hero-button {
+.hero button {
+  margin-left: 700px;
+  margin-bottom: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -122,7 +126,18 @@ body {
 }
 /* Секция Герой*/
 .hero {
+  width: 1600px;
   background-color: rgba(47, 48, 58, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+.hero-title {
+  padding-top: 200px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
 }
 .hero-title,
 .section-title-ch,
@@ -136,6 +151,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 /*секция особенности*/
 .section-title-osob {
@@ -143,8 +159,20 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
+.osob-items {
+  width: 270px;
+}
+.osob-items:not(:last-child) {
+  margin-right: 30px;
+}
+.osob-items .bgr-osob {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .bgr-osob,
-.bgr-comand {
+.comand {
   background-color: var(--bgr-section-color);
 }
 .bgr-osob:hover,
@@ -153,12 +181,42 @@ body {
 }
 /* секция Чем занимаемся*/
 .section-title-ch {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.contaner .job-contaner {
+  margin-bottom: 94px;
+  text-align: center;
+}
+.job-contaner-items:not(:last-child) {
+  margin-right: 30px;
+}
 /*секция Наша команда*/
+.comand {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+.comand .section-title2 {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.contaner-comand-item {
+  width: 270px;
+  margin-bottom: 94px;
+  padding-right: 24px;
+  background-color: var(--link-text-color);
+}
+.contaner-comand-item:not(:last-child) {
+  margin-right: 30px;
+}
 .section-title-comand {
   font-weight: 500;
   font-size: 16px;
@@ -167,6 +225,13 @@ body {
 .bgr-comand p {
   font-size: 16px;
   line-height: 1.19;
+}
+.contaner-sosial:not(:last-child) {
+  margin-right: 10px;
+}
+/* Секция постоянные клиенты */
+.contaner-clients .contaner-clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* footer*/
 .logo-footer {
@@ -188,11 +253,38 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 /*   ПОРТФОЛИО*/
+
 .section-title-portf {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.contaner .portfolio-text,
+.contaner .osob-contaner,
+.contaner .job-contaner,
+.contaner .bgr-comand,
+.contaner .contaner-sosial,
+.contaner .contaner-clients {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /*background-color: tomato;*/
+}
+.portfolio-item {
+  width: 370px;
+  margin-right: 30px;
+  padding-right: 24px;
+}
+.section-title-portf,
+.section-title-comand,
+.contaner-comand-item p,
+.portfolio-item p {
+  text-align: center;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
 }
 .portfolio-text p {
   font-size: 16px;
