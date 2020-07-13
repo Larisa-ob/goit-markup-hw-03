@@ -13,45 +13,63 @@
   </head>
   <body>
     <header class="header">
-      <nav>
-        <a class="link logo" href="WebStudio"
-          ><span class="web">Web</span>Studio</a
-        >
-        <ul class="site-nav list">
-          <li><a class="link" href="./index.html">Студия</a></li>
-          <li><a class="link curent" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
+      <div class="contaner">
+        <nav class="navigation">
+          <a class="link logo" href="WebStudio"
+            ><span class="web">Web</span>Studio</a
+          >
+          <ul class="site-nav list">
+            <li class="nav-list-link">
+              <a class="link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list-link">
+              <a class="link curent" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-list-link"><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="adress-item list">
+          <li class="adress-link">
+            <address>
+              <a class="link header-adress" href="melto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </address>
+          </li>
+          <li class="adress-link">
+            <address>
+              <a class="link header-adress" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </address>
+          </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <address>
-            <a class="link header-adress" href="melto:info@devstudio.com">
-              info@devstudio.com</a
-            >
-          </address>
-        </li>
-        <li>
-          <address>
-            <a class="link header-adress" href="tel:+380961111111">
-              +38 096 111 11 11</a
-            >
-          </address>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--Секция отображения наших разработок-->
       <section>
-        <h1 hidden>Наши разработки</h1>
-        <!--Перень фильтров-->
-        <ul class="list">
-          <li><button class="button primary">Все</button></li>
-          <li><button class="button secondary">Веб-сайты</button></li>
-          <li><button class="button secondary">Приложения</button></li>
-          <li><button class="button secondary">Дизайн</button></li>
-          <li><button class="button secondary">Маркетинг</button></li>
-        </ul>
+        <div class="contaner">
+          <h1 hidden>Наши разработки</h1>
+          <!--Перень фильтров-->
+          <ul class="contaner-portfolio list">
+            <li class="contaner-button-item">
+              <button class="button primary">Все</button>
+            </li>
+            <li class="contaner-button-item">
+              <button class="button secondary">Веб-сайты</button>
+            </li>
+            <li class="contaner-button-item">
+              <button class="button secondary">Приложения</button>
+            </li>
+            <li class="contaner-button-item">
+              <button class="button secondary">Дизайн</button>
+            </li>
+            <li class="contaner-button-item">
+              <button class="button secondary">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
         <!--Перечень картинок-->
         <div class="contaner">
           <ul class="list portfolio-text">

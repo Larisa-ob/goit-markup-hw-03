@@ -33,7 +33,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
+  text-align: center;
 }
 .link {
   text-decoration: none;
@@ -151,7 +151,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
+  align-items: center;
 }
 /*секция особенности*/
 .section-title-osob {
@@ -193,6 +193,7 @@ body {
 .contaner .job-contaner {
   margin-bottom: 94px;
   text-align: center;
+  align-items: center;
 }
 .job-contaner-items:not(:last-child) {
   margin-right: 30px;
@@ -203,10 +204,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 94px;
+  text-align: center;
 }
 .comand .section-title2 {
   padding-top: 94px;
   padding-bottom: 50px;
+  text-align: center;
 }
 .contaner-comand-item {
   width: 270px;
@@ -226,11 +229,14 @@ body {
   font-size: 16px;
   line-height: 1.19;
 }
-.contaner-sosial:not(:last-child) {
-  margin-right: 10px;
-}
 /* Секция постоянные клиенты */
-.contaner-clients .contaner-clients-item:not(:last-child) {
+.contaner-clients-item {
+  width: 170px;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.contaner-clients-item:not(:last-child) {
   margin-right: 30px;
 }
 /* footer*/
@@ -265,11 +271,16 @@ body {
 .contaner .job-contaner,
 .contaner .bgr-comand,
 .contaner .contaner-sosial,
-.contaner .contaner-clients {
+.contaner .contaner-clients,
+.contaner .contaner-portfolio {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   /*background-color: tomato;*/
+}
+.contaner-button-item {
+  margin-right: 10px;
+  padding-right: 495px;
 }
 .portfolio-item {
   width: 370px;
@@ -282,7 +293,13 @@ body {
 .portfolio-item p {
   text-align: center;
 }
-
+.contaner-portfolio {
+  align-items: center;
+  justify-content: space-between;
+}
+.contaner-button-item .button:not(:last-child) {
+  margin-right: 8px;
+}
 .portfolio-item:nth-child(3n) {
   margin-right: 0px;
 }
