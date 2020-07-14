@@ -41,6 +41,8 @@ body {
 .header .contaner {
   display: flex;
   justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation {
   display: flex;
@@ -190,6 +192,9 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
+.job-contaner-items img {
+  display: block;
+}
 .contaner .job-contaner {
   margin-bottom: 94px;
   text-align: center;
@@ -228,6 +233,12 @@ body {
 .bgr-comand p {
   font-size: 16px;
   line-height: 1.19;
+}
+.contaner-sosial {
+  margin-bottom: 12px;
+}
+.contaner-sosial:not(:last-child) {
+  margin-right: 34px;
 }
 /* Секция постоянные клиенты */
 .contaner-clients-item {
@@ -272,15 +283,15 @@ body {
 .contaner .bgr-comand,
 .contaner .contaner-sosial,
 .contaner .contaner-clients,
-.contaner .contaner-portfolio {
+.contaner .contaner-portfolio,
+.contaner .social {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   /*background-color: tomato;*/
 }
-.contaner-button-item {
-  margin-right: 10px;
-  padding-right: 495px;
+.contaner-portfolio {
+  justify-content: center;
 }
 .portfolio-item {
   width: 370px;
@@ -293,12 +304,11 @@ body {
 .portfolio-item p {
   text-align: center;
 }
-.contaner-portfolio {
-  align-items: center;
-  justify-content: space-between;
+.contaner-button-item {
+  margin-bottom: 56px;
 }
-.contaner-button-item .button:not(:last-child) {
-  margin-right: 8px;
+.contaner-button-item:not(:last-child) {
+  margin-right: 52px;
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0px;
