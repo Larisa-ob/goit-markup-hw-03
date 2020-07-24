@@ -27,7 +27,10 @@ body {
   margin: 0;
   list-style: none;
 }
-.contaner {
+.section {
+  margin-bottom: 94px;
+}
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -38,7 +41,7 @@ body {
 .link {
   text-decoration: none;
 }
-.header .contaner {
+.header .container {
   display: flex;
   justify-content: space-between;
   padding-top: 32px;
@@ -54,11 +57,10 @@ body {
 .nav-list-link:not(:last-child) {
   margin-right: 50px;
 }
-.contaner .adress-item {
+.container .adress-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-right: 30px;
 }
 .adress-link:not(:last-child) {
   margin-right: 30px;
@@ -68,14 +70,19 @@ body {
   font-size: 16px;
   line-height: 1.6;
   align-items: center;
+  background-color: transparent;
 }
 .hero button {
-  margin-left: 700px;
-  margin-bottom: 200px;
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  padding: 10px 32px 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
 }
 .button.primary,
 .hero-button,
@@ -128,14 +135,15 @@ body {
 }
 /* Секция Герой*/
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   background-color: rgba(47, 48, 58, 0.8);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
-  padding-top: 200px;
+  margin-bottom: 20px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -195,17 +203,17 @@ body {
 .job-contaner-items img {
   display: block;
 }
-.contaner .job-contaner {
+.container .job-contaner {
   margin-bottom: 94px;
   text-align: center;
   align-items: center;
 }
-.job-contaner-items:not(:last-child) {
+.job-container-items:not(:last-child) {
   margin-right: 30px;
 }
 /*секция Наша команда*/
 .comand {
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
@@ -217,11 +225,11 @@ body {
   padding-bottom: 50px;
   text-align: center;
 }
-.contaner-comand-item {
+.container-comand-item {
   width: 270px;
   background-color: var(--link-text-color);
 }
-.contaner-comand-item:not(:last-child) {
+.container-comand-item:not(:last-child) {
   margin-right: 30px;
 }
 .section-title-comand {
@@ -234,7 +242,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
 }
-.contaner-sosial .social {
+.container-sosial .social {
   width: 206px;
   margin-left: auto;
   margin-right: auto;
@@ -249,11 +257,11 @@ body {
   justify-content: center;
   margin-bottom: 24px;
 }
-.contaner-sosial-item:not(:last-child) {
+.container-sosial-item:not(:last-child) {
   margin-right: 32px;
 }
 /* Секция постоянные клиенты */
-.contaner-clients-item {
+.container-clients-item {
   width: 170px;
   height: 90px;
   justify-content: center;
@@ -264,7 +272,7 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.contaner-clients-item:not(:last-child) {
+.container-clients-item:not(:last-child) {
   margin-right: 30px;
 }
 /* footer*/
@@ -286,17 +294,17 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.div-text-footer .contaner-social .social {
+.div-text-footer .container-social .social {
   background-color: rgba(255, 255, 255, 0.1);
   height: 44px;
 }
-.logo-footer .contaner {
+.logo-footer .container {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
 }
-.contaner-footer-adress {
+.container-footer-adress {
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -306,7 +314,7 @@ body {
 .footer-adress-mail {
   padding: 9px 0 9px 0;
 }
-.div-text-footer .contaner-social .social {
+.div-text-footer .container-social .social {
   margin-top: 20px;
 }
 /*   ПОРТФОЛИО*/
@@ -317,19 +325,19 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.contaner .portfolio-text,
-.contaner .osob-contaner,
-.contaner .job-contaner,
-.contaner .bgr-comand,
-.contaner .contaner-sosial,
-.contaner .contaner-clients,
-.contaner .contaner-portfolio {
+.container .portfolio-text,
+.container .osob-container,
+.container .job-container,
+.container .bgr-comand,
+.container .container-sosial,
+.container .container-clients,
+.container .container-portfolio {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* background-color: tomato;*/
+  background-color: tomato;
 }
-.contaner-portfolio {
+.container-portfolio {
   justify-content: center;
 }
 .portfolio-item {
@@ -339,14 +347,14 @@ body {
 }
 .section-title-portf,
 .section-title-comand,
-.contaner-comand-item p,
+.container-comand-item p,
 .portfolio-item p {
   text-align: center;
 }
-.contaner-button-item {
+.container-button-item {
   margin-bottom: 56px;
 }
-.contaner-button-item:not(:last-child) {
+.container-button-item:not(:last-child) {
   margin-right: 52px;
 }
 .portfolio-item:nth-child(3n) {
