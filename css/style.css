@@ -22,7 +22,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-.list {
+.list,
+p {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -164,13 +165,10 @@ body {
   align-items: center;
 }
 /*секция особенности*/
-.section-title-osob {
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
+
 .osob-items {
   width: 270px;
+  text-align: left;
 }
 .osob-items:not(:last-child) {
   margin-right: 30px;
@@ -180,6 +178,7 @@ body {
   padding-left: 100px;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-bottom: 20px;
 }
 .bgr-osob,
 .comand {
@@ -188,6 +187,12 @@ body {
 .bgr-osob:hover,
 .bgr-osob:focus {
   background-color: var(--accent-color);
+}
+.section-title-osob {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 /* секция Чем занимаемся*/
 .section-title-ch {
@@ -200,10 +205,10 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.job-contaner-items img {
+.job-container-items img {
   display: block;
 }
-.container .job-contaner {
+*/ .container .job-contaner {
   margin-bottom: 94px;
   text-align: center;
   align-items: center;
@@ -221,7 +226,7 @@ body {
   text-align: center;
   align-items: center;
 }
-.comand .section-title2 {
+.section-title2 {
   padding-bottom: 50px;
   text-align: center;
 }
@@ -255,12 +260,16 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 16px;
   margin-bottom: 24px;
 }
 .container-sosial-item:not(:last-child) {
   margin-right: 32px;
 }
 /* Секция постоянные клиенты */
+.container-clients {
+  margin-top: 50px;
+}
 .container-clients-item {
   width: 170px;
   height: 90px;
@@ -268,7 +277,6 @@ body {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 94px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -277,7 +285,7 @@ body {
 }
 /* footer*/
 .logo-footer {
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
@@ -318,14 +326,14 @@ body {
   margin-top: 20px;
 }
 /*   ПОРТФОЛИО*/
-
 .section-title-portf {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  align-self: start;
 }
-.container .portfolio-text,
+.container .portfolio,
 .container .osob-container,
 .container .job-container,
 .container .bgr-comand,
@@ -335,21 +343,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-color: tomato;
 }
 .container-portfolio {
   justify-content: center;
+  margin-bottom: 34px;
 }
 .portfolio-item {
   width: 370px;
   margin-right: 30px;
-  padding-right: 24px;
 }
-.section-title-portf,
-.section-title-comand,
-.container-comand-item p,
-.portfolio-item p {
-  text-align: center;
+.portfolio-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container-button-item {
   margin-bottom: 56px;
@@ -360,7 +366,14 @@ body {
 .portfolio-item:nth-child(3n) {
   margin-right: 0px;
 }
+.portfolio-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 23px;
+}
 .portfolio-text p {
   font-size: 16px;
   line-height: 1.88;
+  align-self: start;
 }
