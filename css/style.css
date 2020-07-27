@@ -29,7 +29,8 @@ p {
   list-style: none;
 }
 .section {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .container {
   width: 1200px;
@@ -192,6 +193,7 @@ p {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 /* секция Чем занимаемся*/
@@ -227,12 +229,13 @@ p {
   align-items: center;
 }
 .section-title2 {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .container-comand-item {
   width: 270px;
   background-color: var(--link-text-color);
+  padding-bottom: 24px;
 }
 .container-comand-item:not(:last-child) {
   margin-right: 30px;
@@ -246,6 +249,7 @@ p {
 .bgr-comand p {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 24px;
 }
 .container-sosial .social {
   width: 206px;
@@ -260,16 +264,11 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 24px;
 }
 .container-sosial-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 10px;
 }
 /* Секция постоянные клиенты */
-.container-clients {
-  margin-top: 50px;
-}
 .container-clients-item {
   width: 170px;
   height: 90px;
@@ -339,7 +338,6 @@ p {
 /*   ПОРТФОЛИО*/
 .container-portfolio {
   justify-content: center;
-  margin-bottom: 34px;
 }
 .container-button-item {
   margin-bottom: 56px;
